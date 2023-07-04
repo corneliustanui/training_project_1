@@ -61,6 +61,21 @@ STIdata1.rename(
     inplace = True)
 
 # drop unwanted columns
+list(STIdata1.columns)
+
+UnwantedCols = ['C3StiYesno', 'D1BurialSociety', 'D1religiousgrp', 
+                'D1savingsClub', 'D1tradersAssoc', 'D2Group1', 'D2Group2', 
+                'D3Education', 'D3FuneralAssistance', 'D3HealthServices', 
+                'DurationOfillness', 'E8WhyhaveSTI', 'N10givereceiveforsex',
+                'N11Usedcondom', 'N12UseCondom', 'N13TakenAlcohol', 
+                'N14DoYouHave', 'N15LivingTogether', 'N16HowOldIs',
+                'D3receivecredit', 'Typeofsti', 'N2SexDebut', 'N3HadAnSti',
+                'N9Relationship', 'HabitationStatus','SexPartner1year',
+                'SexPartner3month', 'LastPartnerSpouse', 'Belong', 
+                'ReceiveHelp', 'SexPartnerLife3', 'Sex.1']
+
+
+STIdata1.drop(columns = UnwantedCols, inplace = True)
 
 # clean cat variables
 
