@@ -64,7 +64,6 @@ STIdata1.rename(
 
 # clean cat variables
 
-
 # write functions
 
 # append
