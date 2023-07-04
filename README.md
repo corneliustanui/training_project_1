@@ -1,2 +1,2 @@
-# training_project_1
-Intro training to python
+# Training Project_1
+Intro training to Python
