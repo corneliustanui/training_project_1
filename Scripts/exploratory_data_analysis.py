@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import os as os
+import re
 
 # check current working directory
 os.getcwd()
@@ -65,7 +66,7 @@ list(STIdata1.columns)
 
 UnwantedCols = ['C3StiYesno', 'D1BurialSociety', 'D1religiousgrp', 
                 'D1savingsClub', 'D1tradersAssoc', 'D2Group1', 'D2Group2', 
-                'D3Education', 'D3FuneralAssistance', 'D3HealthServices', 
+                'D3Education', 'Education', 'D3FuneralAssistance', 'D3HealthServices', 
                 'DurationOfillness', 'E8WhyhaveSTI', 'N10givereceiveforsex',
                 'N11Usedcondom', 'N12UseCondom', 'N13TakenAlcohol', 
                 'N14DoYouHave', 'N15LivingTogether', 'N16HowOldIs',
@@ -78,6 +79,54 @@ UnwantedCols = ['C3StiYesno', 'D1BurialSociety', 'D1religiousgrp',
 STIdata1.drop(columns = UnwantedCols, inplace = True)
 
 # clean cat variables
+
+# clean Case_Status
+STIdata1['Case_Status'].value_counts()
+
+# replace 2 and 3 with 0
+STIdata1.loc[STIdata1["Case_Status"] == 2, "Case_Status"] = 0
+STIdata1.loc[STIdata1["Case_Status"] == 3, "Case_Status"] = 0
+
+Case_Status_recode = {0:'Negative',
+                      1:'Positive'}
+
+STIdata1 = STIdata1.assign(Case_Status = STIdata1.Case_Status.map(Case_Status_recode))
+
+# clean Unemployed
+STIdata1['Unemployed'].value_counts()
+
+Unemployed_recode = {1:'Yes',
+                     2:'No'}
+
+STIdata1 = STIdata1.assign(Unemployed = STIdata1.Unemployed.map(Unemployed_recode))
+
+# clean AlcoholUse
+STIdata1['AlcoholUse'].value_counts()
+
+AlcoholUse_recode = {1:'Primary',
+                     2:'Secondary'}
+
+STIdata1 = STIdata1.assign(AlcoholUse = STIdata1.AlcoholUse.map(AlcoholUse_recode))
+
+# clean Occupation
+STIdata1.Occupation = STIdata1.Occupation.str.replace(r'[0-9]',"")
+STIdata1.Occupation = STIdata1.Occupation.replace(r"^ +| +$", r"", regex = True)
+STIdata1.Occupation = STIdata1.Occupation.str.title()
+
+# clean Church
+STIdata1.Church = STIdata1.Church.str.replace(r'[0-9]',"")
+STIdata1.Church = STIdata1.Church.replace(r"^ +| +$", r"", regex = True)
+STIdata1.Church = STIdata1.Church.str.title()
+
+# clean Education_Level
+STIdata1.Education_Level = STIdata1.Education_Level.str.replace(r'[0-9]',"")
+STIdata1.Education_Level = STIdata1.Education_Level.replace(r"^ +| +$", r"", regex = True)
+STIdata1.Education_Level = STIdata1.Education_Level.str.title()
+
+# clean Marital_Status
+STIdata1.Marital_Status = STIdata1.Marital_Status.str.replace(r'[0-9]',"")
+STIdata1.Marital_Status = STIdata1.Marital_Status.replace(r"^ +| +$", r"", regex = True)
+STIdata1.Marital_Status = STIdata1.Marital_Status.str.title()
 
 # write functions
 
