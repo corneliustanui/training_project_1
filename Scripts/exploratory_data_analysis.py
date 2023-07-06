@@ -1,9 +1,10 @@
 # load packages
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
-import os as os
-import re
+import os as os                   # directory management
+import pandas as pd               # data wrangling
+import xlwt                       # writing to Excel, used with '.to_excel()'
+import numpy as np                # data wrangling
+import matplotlib.pyplot as plt   # data viz
+import re                         # regular expressions, 
 
 # check current working directory
 os.getcwd()
@@ -108,37 +109,124 @@ AlcoholUse_recode = {1:'Primary',
 
 STIdata1 = STIdata1.assign(AlcoholUse = STIdata1.AlcoholUse.map(AlcoholUse_recode))
 
+# fun to remove nums and spaces in a cat var
+def clean_cat(data_frame, cat_var):
+    data_frame[cat_var] = data_frame[cat_var].str.replace(r'[0-9]',"")
+    data_frame[cat_var] = data_frame[cat_var].replace(r"^ +| +$", r"", regex = True)
+    data_frame[cat_var] = data_frame[cat_var].str.title()
+    return data_frame
+    
 # clean Occupation
-STIdata1.Occupation = STIdata1.Occupation.str.replace(r'[0-9]',"")
-STIdata1.Occupation = STIdata1.Occupation.replace(r"^ +| +$", r"", regex = True)
-STIdata1.Occupation = STIdata1.Occupation.str.title()
+STIdata1 = clean_cat(data_frame = STIdata1, cat_var = "Occupation")
 
 # clean Church
-STIdata1.Church = STIdata1.Church.str.replace(r'[0-9]',"")
-STIdata1.Church = STIdata1.Church.replace(r"^ +| +$", r"", regex = True)
-STIdata1.Church = STIdata1.Church.str.title()
+STIdata1 = clean_cat(data_frame = STIdata1, cat_var = "Church")
 
 # clean Education_Level
-STIdata1.Education_Level = STIdata1.Education_Level.str.replace(r'[0-9]',"")
-STIdata1.Education_Level = STIdata1.Education_Level.replace(r"^ +| +$", r"", regex = True)
-STIdata1.Education_Level = STIdata1.Education_Level.str.title()
+STIdata1 = clean_cat(data_frame = STIdata1, cat_var = "Education_Level")
 
 # clean Marital_Status
-STIdata1.Marital_Status = STIdata1.Marital_Status.str.replace(r'[0-9]',"")
-STIdata1.Marital_Status = STIdata1.Marital_Status.replace(r"^ +| +$", r"", regex = True)
-STIdata1.Marital_Status = STIdata1.Marital_Status.str.title()
+STIdata1 = clean_cat(data_frame = STIdata1, cat_var = "Marital_Status")
 
-# write functions
+# export clean data
+STIdata1.to_csv(path_or_buf = "Data/Clean_STIData.csv", index = False)
+STIdata1.to_excel(excel_writer = "Data/Clean_STIData.xls", index = False)
 
 # append
+STIdata2 = STIdata1.iloc[0:100, :]
+STIdata3 = STIdata1.iloc[100:, :]
+
+STIdata4 = STIdata2.append(STIdata3, ignore_index = True)
 
 # merge
+STIdata2 = STIdata1.iloc[:, 0:7]
+STIdata3 = STIdata1.loc[:, STIdata1.columns[np.r_[0, 7:14]]]
+
+STIdata4 = pd.merge(STIdata2, STIdata3, on = 'ID')
 
 # filtering
+# the following return the same 
+Filtered_STIdata1 = STIdata1[(STIdata1.Case_Status == "Negative") & (STIdata1.Age <= 20)]
+Filtered_STIdata1 = STIdata1.query('Case_Status == "Negative" & Age <= 20')
+Filtered_STIdata1 = STIdata1.loc[(STIdata1.Case_Status == "Negative") & (STIdata1.Age <= 20)]
+
+# in the below code, '.isin()' is similar to '%in%' in R and 'in' in SAS
+Filtered_STIdata2 = STIdata1[STIdata1.Church.isin(["Roman Catholic", "Pentecostal"])]
+
+# negating filtering
+Filtered_STIdata3 = STIdata1[(STIdata1.Case_Status != "Negative") & (STIdata1.Age <= 20)]
+
+# negating whole condtion
+Filtered_STIdata4 = STIdata1[~((STIdata1.Case_Status == "Negative") | (STIdata1.Age <= 20))]
+
+# missing records by var
+Filtered_STIdata5 = STIdata1[pd.isnull(STIdata1['AgeFirstSex'])]
+
+# non-missing records by var
+Filtered_STIdata6 = STIdata1[STIdata1.AgeFirstSex.notnull()]
+Filtered_STIdata6 = STIdata1[~pd.isnull(STIdata1['AgeFirstSex'])]
+
+# using list comprehension
+Filtered_STIdata7 = STIdata1[[x in ['Negative'] for x in STIdata1.Case_Status.values]]
+
+# summary stats
+STIdata1[["Age", "Weight", "Height"]].median()
+STIdata1[["Age", "Weight", "Height"]].mean(skipna = True)
+STIdata1[["Age", "Weight", "Height"]].mean(skipna = False)
+STIdata1[["Age", "Weight", "Height"]].describe()
+
+STIdata1.agg(
+    {
+     "Age": ["min", "max", "median", "skew"],
+     "Weight": ["min", "max", "median", "mean"],
+     }
+    )
 
 # summary stats by group
+STIdata1[["Sex", "Age"]].groupby("Sex").mean()
+STIdata1[["Sex", "Age", "Weight", "Height"]].groupby("Sex").mean()
+STIdata1[["Occupation", "Age", "Weight", "Height"]].groupby("Occupation").mean().round(2)
+STIdata1[["Occupation", "Age", "Weight", "Height"]].groupby("Occupation").describe()
+
+# contigency tables (without totals)
+pd.crosstab(index = STIdata1['Case_Status'], 
+            columns =STIdata1['Occupation'])
+
+# contigency tables (with totals)
+pd.crosstab(index = STIdata1['Case_Status'], 
+            columns =STIdata1['Occupation'], 
+            margins = True)
+
+# contigency tables (with total percent)
+pd.crosstab(index = STIdata1['Case_Status'], 
+            columns =STIdata1['Occupation'], 
+            margins = True,
+            margins_name = 'Total',
+            normalize = 'all').round(4)*100
+
+# contigency tables (with row percent)
+pd.crosstab(index = STIdata1['Case_Status'], 
+            columns =STIdata1['Occupation'], 
+            margins = True,
+            margins_name = 'Total',
+            normalize = 'index').round(4)*100
+
+# contigency tables (with col percent)
+pd.crosstab(index = STIdata1['Case_Status'], 
+            columns =STIdata1['Occupation'], 
+            margins = True,
+            margins_name = 'Total',
+            normalize = 'columns').round(4)*100
 
 # visualisation
+plt.bar(x = 'Occupation',
+        y = 'Age',
+        height = 10)
 
+plt.show()
+
+STIdata1.plot.bar(x = 'Occupation', 
+                  y = 'Age', 
+                  rot = 0)
 
 

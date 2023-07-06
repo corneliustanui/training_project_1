@@ -1,0 +1,228 @@
+ID,Case_Status,Date,Age,Occupation,Church,Education_Level,Marital_Status,Weight,Height,Sex,AgeFirstSex,Unemployed,AlcoholUse
+1,Negative,05-Dec-09,30,Unemployed,Other,Secondary,Married,69.0,168.0,Female,17+years,Yes,Primary
+2,Negative,05-Dec-09,30,Informal,Other,Secondary,Married,48.0,138.0,Female,17+years,No,Primary
+3,Positive,05-Dec-09,23,Formal,Methodist,Secondary,Married,55.0,157.0,Male,17+years,No,Secondary
+4,Negative,05-Dec-09,24,Formal,Atheist,Secondary,Single,39.0,151.0,Male,<17years,No,Secondary
+5,Positive,05-Dec-09,27,Unemployed,Methodist,Secondary,Married,44.5,158.0,Male,17+years,Yes,Secondary
+6,Negative,04-Dec-09,25,Formal,Apostolic,Secondary,Married,75.0,158.0,Male,17+years,No,Secondary
+7,Positive,04-Dec-09,33,Formal,Atheist,Secondary,Married,74.0,164.0,Male,,No,Secondary
+8,Negative,04-Dec-09,30,Informal,Atheist,Secondary,Married,74.7,171.0,Male,,No,Primary
+9,Positive,04-Dec-09,63,Unemployed,Atheist,Primary,Divorcee,66.0,163.0,Male,17+years,Yes,Secondary
+10,Negative,03-Dec-09,63,Student,Other,Primary,Married,83.0,156.0,Male,,,Secondary
+11,Positive,03-Dec-09,22,Formal,Atheist,Secondary,Single,74.5,154.0,Male,17+years,No,Secondary
+12,Negative,04-Dec-09,22,Informal,Atheist,Primary,Single,94.0,170.0,Male,17+years,No,Secondary
+13,Positive,04-Dec-09,19,Student,Roman Catholic,Tertiary,Single,82.0,158.0,Male,17+years,,Secondary
+14,Negative,04-Dec-09,22,Formal,Pentecostal,Secondary,Single,38.0,168.0,Male,17+years,No,Secondary
+15,Positive,04-Dec-09,29,Formal,Atheist,Secondary,Married,73.5,160.0,Male,17+years,No,Secondary
+16,Negative,04-Dec-09,33,Unemployed,Apostolic,Secondary,Widowed,46.0,150.0,Male,17+years,Yes,Secondary
+17,Positive,04-Dec-09,21,Formal,Pentecostal,Secondary,Single,73.5,159.0,Male,17+years,No,Secondary
+18,Negative,04-Dec-09,21,Formal,Roman Catholic,Tertiary,Single,49.5,164.0,Male,17+years,No,Secondary
+19,Positive,04-Dec-09,26,Formal,Atheist,Secondary,Married,62.0,159.0,Male,17+years,No,Secondary
+20,Negative,04-Dec-09,24,Formal,Methodist,Secondary,Single,54.0,168.0,Male,17+years,No,Secondary
+21,Positive,05-Dec-09,33,Formal,Apostolic,Secondary,Married,63.0,158.0,Male,17+years,No,Secondary
+22,Negative,05-Dec-09,36,Formal,Apostolic,Secondary,Married,59.5,155.0,Male,17+years,No,Secondary
+23,Positive,05-Dec-09,23,Unemployed,Apostolic,Secondary,Married,70.0,175.0,Female,17+years,Yes,Secondary
+24,Negative,05-Dec-09,23,Unemployed,Other,Secondary,Married,47.5,150.0,Female,17+years,Yes,Secondary
+25,Positive,05-Dec-09,33,Formal,Roman Catholic,Secondary,Single,68.0,161.0,Male,17+years,No,Primary
+26,Negative,05-Dec-09,31,Formal,Apostolic,Secondary,Married,70.0,160.0,Male,17+years,No,Secondary
+27,Positive,05-Dec-09,48,Formal,Apostolic,Primary,Married,66.5,157.0,Male,17+years,No,Secondary
+28,Negative,05-Dec-09,43,Informal,Atheist,Primary,Married,74.5,168.0,Male,<17years,No,Secondary
+29,Positive,05-Dec-09,19,Formal,Apostolic,Secondary,Single,65.0,170.0,Male,<17years,No,Primary
+30,Negative,05-Dec-09,16,Unemployed,Pentecostal,Secondary,Married,75.0,166.0,Female,<17years,Yes,Primary
+31,Negative,05-Dec-09,23,Unemployed,Roman Catholic,Secondary,Married,49.6,167.0,Female,17+years,Yes,Secondary
+32,Negative,03-Dec-09,23,Unemployed,Pentecostal,Secondary,Married,61.0,182.0,Female,17+years,Yes,Secondary
+33,Positive,03-Dec-09,24,Student,Apostolic,Secondary,Married,53.0,166.0,Female,17+years,,Primary
+34,Negative,03-Dec-09,24,Unemployed,Apostolic,Secondary,Married,91.4,166.0,Female,17+years,Yes,Primary
+35,Positive,03-Dec-09,33,Formal,Roman Catholic,Secondary,Married,100.0,166.0,Female,17+years,No,Secondary
+36,Negative,05-Dec-09,33,Unemployed,Apostolic,Secondary,Divorcee,66.0,162.0,Female,17+years,Yes,Primary
+37,Positive,06-Dec-09,32,Formal,Pentecostal,Secondary,Married,71.0,165.0,Female,17+years,No,Secondary
+38,Negative,06-Dec-09,30,Formal,Other,Secondary,Married,49.5,154.0,Female,17+years,No,Secondary
+39,Positive,06-Dec-09,27,Unemployed,Anglican,Secondary,Married,51.0,167.0,Female,17+years,Yes,Secondary
+40,Negative,06-Dec-09,28,Unemployed,Roman Catholic,Secondary,Married,74.0,165.0,Female,17+years,Yes,Secondary
+41,Positive,06-Dec-09,23,Unemployed,Apostolic,Primary,Co-Habiting,55.0,150.0,Female,17+years,Yes,Primary
+42,Negative,06-Dec-09,21,Unemployed,Atheist,Secondary,Married,42.0,164.0,Female,<17years,Yes,Primary
+43,Positive,06-Dec-09,20,Unemployed,Apostolic,Secondary,Married,45.4,158.0,Female,17+years,Yes,Secondary
+44,Negative,06-Dec-09,23,Unemployed,Apostolic,Secondary,Married,51.0,143.0,Female,17+years,Yes,Secondary
+45,Positive,08-Dec-09,32,Formal,Methodist,Secondary,Married,60.0,180.0,Male,17+years,No,
+46,Negative,05-Dec-09,33,Informal,Atheist,Secondary,Married,62.0,159.0,Male,<17years,No,Primary
+47,Positive,08-Dec-08,36,Unemployed,Pentecostal,Secondary,Married,58.0,161.0,Male,17+years,Yes,Secondary
+48,Negative,03-Dec-09,38,Formal,Roman Catholic,Secondary,Married,46.0,145.0,,17+years,No,Primary
+49,Positive,03-Dec-09,26,Informal,Roman Catholic,Secondary,Single,45.0,160.0,Male,<17years,No,Secondary
+50,Negative,03-Dec-09,28,Formal,Apostolic,Secondary,Married,49.0,149.0,Male,17+years,No,Secondary
+51,Positive,03-Dec-09,23,Formal,Anglican,Secondary,Single,60.5,155.0,Male,17+years,No,Secondary
+227,Positive,03-Dec-09,21,Formal,Anglican,Secondary,Single,60.5,155.0,Male,17+years,No,Secondary
+52,Negative,03-Dec-09,24,Formal,Atheist,Secondary,Married,42.0,154.0,Male,<17years,No,Secondary
+53,Positive,03-Dec-09,31,Formal,Roman Catholic,Secondary,Married,69.0,171.0,Male,17+years,No,Primary
+54,Negative,03-Dec-09,32,Formal,Other,Secondary,Married,66.0,159.0,Male,17+years,No,Secondary
+55,Positive,03-Dec-09,29,Formal,Atheist,Secondary,Married,50.5,148.0,Male,<17years,No,Primary
+56,Negative,05-Dec-09,32,Formal,Atheist,Secondary,Married,46.0,164.0,Male,17+years,No,Secondary
+57,Positive,05-Dec-09,30,Informal,Other,Primary,Married,41.0,164.0,Male,17+years,No,Primary
+58,Negative,05-Dec-09,30,Informal,Other,Secondary,Married,33.0,157.0,Male,17+years,No,Secondary
+59,Positive,05-Dec-09,26,Formal,Apostolic,Secondary,Married,51.7,160.0,Male,<17years,No,Secondary
+60,Negative,05-Dec-09,29,Informal,Other,Secondary,Married,48.0,165.0,Male,17+years,No,Secondary
+61,Positive,05-Dec-09,28,Formal,Pentecostal,Secondary,Married,50.4,148.0,Male,17+years,No,
+62,Negative,05-Dec-09,28,Informal,Roman Catholic,Secondary,Divorcee,36.0,160.0,Male,17+years,No,Secondary
+63,Positive,05-Dec-09,24,Informal,Roman Catholic,Secondary,Single,56.0,160.0,Male,17+years,No,Secondary
+64,Negative,05-Dec-09,27,Formal,Apostolic,Secondary,Married,58.5,157.0,Male,17+years,No,Secondary
+65,Positive,05-Dec-09,22,Informal,Anglican,Secondary,Married,50.5,168.0,Male,<17years,No,Primary
+66,Negative,06-Dec-09,24,Formal,Apostolic,Secondary,Married,47.0,163.0,Male,17+years,No,Secondary
+67,Positive,06-Dec-09,23,Formal,Roman Catholic,Secondary,Married,52.0,151.0,Female,17+years,No,Secondary
+68,Negative,06-Dec-09,29,Formal,Anglican,Secondary,Widowed,38.0,158.0,Female,17+years,No,Secondary
+69,Positive,06-Dec-09,26,Unemployed,Roman Catholic,Secondary,Married,45.0,156.0,Female,17+years,Yes,Secondary
+70,Negative,06-Dec-09,29,Unemployed,Pentecostal,Secondary,Married,56.0,169.0,Female,17+years,Yes,Secondary
+71,Positive,06-Dec-09,29,Formal,Methodist,Secondary,Single,49.0,168.0,Male,17+years,No,Primary
+72,Negative,06-Dec-09,23,Formal,Roman Catholic,Tertiary,Married,42.5,159.0,Male,17+years,No,Secondary
+73,Positive,06-Dec-09,32,Unemployed,Atheist,Secondary,Married,52.0,156.0,Male,<17years,Yes,Secondary
+74,Negative,06-Dec-09,31,Informal,Roman Catholic,Secondary,Married,58.0,166.0,Male,17+years,No,Secondary
+75,Positive,06-Dec-09,31,Informal,Apostolic,Secondary,Single,46.0,165.0,Male,17+years,No,Primary
+76,Negative,06-Dec-09,28,Formal,Apostolic,Secondary,Married,39.0,155.0,Male,<17years,No,Secondary
+77,Positive,06-Dec-09,25,Formal,Atheist,Primary,Divorcee,49.0,174.0,Female,<17years,No,Secondary
+78,Negative,06-Dec-09,29,Unemployed,Pentecostal,Secondary,Married,48.8,174.0,Female,17+years,Yes,Primary
+79,Positive,06-Dec-09,23,Informal,Atheist,Secondary,Single,62.0,161.0,Male,17+years,No,Primary
+80,Negative,06-Dec-09,28,Formal,Apostolic,Secondary,Married,48.0,168.0,Male,<17years,No,Secondary
+81,Positive,06-Dec-09,35,Unemployed,Apostolic,Secondary,Co-Habiting,54.0,173.0,Female,17+years,Yes,Primary
+82,Negative,06-Dec-09,40,Informal,Anglican,Primary,Married,47.0,148.0,Female,17+years,No,Secondary
+83,Positive,06-Dec-09,20,Unemployed,Apostolic,Secondary,Married,43.0,163.0,Female,17+years,Yes,Secondary
+84,Negative,06-Dec-09,20,Unemployed,Atheist,Secondary,Married,49.0,156.0,Female,17+years,Yes,Primary
+85,Positive,03-Dec-09,32,Unemployed,Pentecostal,Secondary,Married,62.0,162.0,Female,<17years,Yes,Secondary
+86,Negative,03-Dec-09,33,Unemployed,Pentecostal,Secondary,Married,59.5,165.0,Female,<17years,Yes,Secondary
+87,Positive,03-Dec-09,45,Informal,Roman Catholic,Primary,Married,40.0,160.0,Male,17+years,No,Secondary
+88,Negative,03-Dec-09,42,Formal,Roman Catholic,Secondary,Married,57.0,155.0,Male,17+years,No,Primary
+89,Positive,03-Dec-09,23,Formal,Pentecostal,Secondary,Widowed,95.5,170.0,Female,<17years,No,Primary
+90,Negative,03-Dec-09,26,Informal,Pentecostal,Secondary,Married,55.0,158.0,Female,17+years,No,Secondary
+91,Positive,03-Dec-09,28,Informal,Atheist,Secondary,Married,49.0,164.0,Male,17+years,No,Primary
+92,Negative,03-Dec-09,30,Informal,Pentecostal,Secondary,Married,51.0,161.0,Male,17+years,No,Secondary
+93,Positive,03-Dec-09,25,Informal,Roman Catholic,Secondary,Married,49.0,163.0,Female,17+years,No,Primary
+94,Negative,03-Dec-09,25,Unemployed,Apostolic,Primary,Married,48.0,164.0,Female,17+years,Yes,Secondary
+95,Positive,03-Dec-09,43,Unemployed,Anglican,Secondary,Married,62.5,163.0,Male,17+years,Yes,Secondary
+96,Negative,03-Dec-09,42,Formal,Apostolic,Secondary,Married,57.0,166.0,Male,17+years,No,Secondary
+97,Positive,03-Dec-09,27,Unemployed,Roman Catholic,Primary,Married,48.5,146.0,Female,17+years,Yes,Secondary
+98,Negative,03-Dec-09,26,Unemployed,Apostolic,Secondary,Married,60.0,191.0,Female,17+years,Yes,Secondary
+99,Positive,03-Dec-09,20,Unemployed,Pentecostal,Primary,Married,41.0,160.0,Female,<17years,Yes,Secondary
+100,Negative,03-Dec-09,19,Unemployed,Atheist,Secondary,Married,39.5,150.0,Female,17+years,Yes,Secondary
+101,Positive,04-Dec-09,21,Unemployed,Methodist,Tertiary,Married,49.0,155.0,Female,17+years,Yes,Secondary
+102,Negative,04-Dec-09,24,Unemployed,Roman Catholic,Secondary,Married,57.0,157.0,Female,17+years,Yes,Secondary
+103,Positive,04-Dec-09,19,Formal,Pentecostal,Secondary,Married,70.0,163.0,Female,17+years,No,Secondary
+104,Negative,04-Dec-09,19,Formal,Roman Catholic,Secondary,Married,68.0,176.0,Female,17+years,No,Primary
+105,Positive,04-Dec-09,22,Unemployed,Roman Catholic,Secondary,Co-Habiting,58.0,157.0,Female,17+years,Yes,Primary
+106,Negative,04-Dec-09,24,Unemployed,Pentecostal,Secondary,Married,43.0,163.0,Female,17+years,Yes,Secondary
+107,Negative,04-Dec-09,19,Formal,Roman Catholic,Secondary,Married,51.0,153.0,Male,<17years,No,Secondary
+108,Positive,04-Dec-09,24,Unemployed,Pentecostal,Secondary,Single,62.0,145.0,Male,<17years,Yes,Secondary
+109,Positive,04-Dec-09,26,Formal,Roman Catholic,Tertiary,Single,51.0,160.0,Male,17+years,No,Secondary
+110,Negative,04-Dec-09,23,Formal,Anglican,Secondary,Single,52.0,165.0,Male,17+years,No,Primary
+111,Positive,04-Dec-09,24,Unemployed,Roman Catholic,Secondary,Married,46.0,157.0,Female,17+years,Yes,Secondary
+112,Negative,04-Dec-09,22,Unemployed,Apostolic,Secondary,Divorcee,39.0,152.0,Female,17+years,Yes,Secondary
+113,Positive,04-Dec-09,23,Informal,Apostolic,Secondary,Married,58.0,157.0,Female,<17years,No,Secondary
+114,Negative,04-Dec-09,20,Unemployed,Pentecostal,Secondary,Single,48.0,160.0,Female,17+years,Yes,Secondary
+115,Positive,04-Dec-09,29,Informal,Atheist,Secondary,Married,42.0,159.0,Male,<17years,No,Secondary
+116,Negative,04-Dec-09,27,Informal,Roman Catholic,Secondary,Married,47.0,182.0,Male,17+years,No,Primary
+117,Positive,04-Dec-09,23,Student,Pentecostal,Secondary,Married,65.4,158.0,Female,17+years,,Secondary
+118,Negative,04-Dec-09,25,Formal,Roman Catholic,Secondary,Married,74.0,170.0,Female,17+years,No,Secondary
+119,Positive,04-Dec-09,21,Student,Methodist,Tertiary,Single,72.0,170.0,Male,17+years,,Secondary
+120,Negative,04-Dec-09,25,Informal,Roman Catholic,Secondary,Married,41.5,162.0,Male,17+years,No,Secondary
+121,Positive,04-Dec-09,23,Unemployed,Atheist,Secondary,Single,53.5,177.0,Male,17+years,Yes,Secondary
+122,Negative,04-Dec-09,24,Informal,Roman Catholic,Secondary,Married,44.4,161.0,Male,17+years,No,Secondary
+123,Positive,04-Dec-09,29,Informal,Atheist,Primary,Married,46.0,162.0,Female,,No,Secondary
+124,Negative,04-Dec-09,30,Formal,Anglican,Secondary,Divorcee,43.5,157.0,Female,17+years,No,Secondary
+125,Positive,04-Dec-09,25,Formal,Other,Secondary,Single,45.2,152.0,Male,17+years,No,Secondary
+126,Negative,04-Dec-09,24,Formal,Atheist,Secondary,Single,59.0,168.0,Male,17+years,No,Secondary
+127,Positive,04-Dec-09,27,Formal,Apostolic,Secondary,Married,41.0,156.0,Male,<17years,No,Primary
+128,Negative,04-Dec-09,27,Formal,Apostolic,Secondary,Married,55.0,162.0,Male,17+years,No,Primary
+129,Positive,04-Dec-09,32,Formal,Other,Secondary,Married,62.0,171.0,Female,17+years,No,Secondary
+130,Negative,04-Dec-09,31,Informal,Apostolic,Secondary,Widowed,41.4,156.0,Female,17+years,No,Secondary
+131,Positive,04-Dec-09,31,Formal,Atheist,Secondary,Married,44.0,162.0,Male,17+years,No,Secondary
+132,Negative,04-Dec-09,32,Formal,Apostolic,Secondary,Married,48.0,162.0,Male,17+years,No,Secondary
+133,Positive,04-Dec-09,34,Formal,Roman Catholic,Secondary,Married,56.4,160.0,Male,<17years,No,Secondary
+134,Negative,04-Dec-09,39,Formal,Roman Catholic,Primary,Married,39.0,155.0,Male,17+years,No,Secondary
+135,Positive,04-Dec-09,26,Formal,Atheist,Secondary,Single,66.0,158.0,Male,17+years,No,Primary
+136,Negative,04-Dec-09,27,Formal,Pentecostal,Secondary,Single,48.5,168.0,Male,17+years,No,Secondary
+137,Positive,04-Dec-09,21,Unemployed,Apostolic,Secondary,Married,43.5,157.0,Female,17+years,Yes,Secondary
+138,Negative,04-Dec-09,25,Informal,Apostolic,Secondary,Married,42.0,156.0,Female,17+years,No,Secondary
+139,Positive,04-Dec-09,23,Formal,Atheist,Secondary,Married,62.0,164.0,Male,<17years,No,Primary
+140,Negative,04-Dec-09,20,Formal,Apostolic,Secondary,Single,55.0,177.0,Male,17+years,No,Secondary
+141,Positive,04-Dec-09,21,Formal,Atheist,Secondary,Single,46.0,145.0,Male,17+years,No,Secondary
+142,Negative,05-Dec-09,19,Informal,Atheist,Secondary,Single,52.0,163.0,Male,17+years,No,Primary
+143,Positive,05-Dec-09,35,Unemployed,Apostolic,Secondary,Married,48.0,150.0,Female,17+years,Yes,Primary
+144,Negative,05-Dec-09,31,Informal,Roman Catholic,Secondary,Divorcee,42.0,152.0,Female,17+years,No,Secondary
+145,Positive,05-Dec-09,23,Unemployed,Anglican,Secondary,Married,48.8,145.0,Female,<17years,Yes,Primary
+146,Negative,05-Dec-09,25,Unemployed,Roman Catholic,Secondary,Married,43.0,156.0,Female,17+years,Yes,Secondary
+147,Positive,05-Dec-09,23,Formal,Atheist,Secondary,Single,75.0,167.0,Male,17+years,No,Secondary
+148,Negative,05-Dec-09,26,Informal,Atheist,Primary,Divorcee,61.0,164.0,Male,<17years,No,Secondary
+149,Positive,05-Dec-09,39,Formal,Atheist,None,Co-Habiting,74.0,167.0,Female,<17years,No,Primary
+150,Negative,05-Dec-09,41,Unemployed,Other,Primary,Married,43.0,158.0,Female,<17years,Yes,Secondary
+151,Positive,05-Dec-09,38,Formal,Atheist,Secondary,Married,47.5,163.0,Male,17+years,No,Primary
+152,Negative,05-Dec-09,35,Formal,Anglican,Secondary,Married,60.0,162.0,Male,17+years,No,Secondary
+153,Positive,05-Dec-09,36,Unemployed,Pentecostal,Secondary,Married,51.0,152.0,Female,17+years,Yes,Secondary
+154,Negative,05-Dec-09,36,Informal,Apostolic,Primary,Married,42.0,160.0,Female,<17years,No,Primary
+155,Positive,05-Dec-09,30,Unemployed,Apostolic,Secondary,Married,50.0,167.0,Female,17+years,Yes,Secondary
+156,Negative,05-Dec-09,26,Unemployed,Other,Secondary,Married,38.0,160.0,Female,17+years,Yes,Secondary
+157,Positive,05-Dec-09,24,Unemployed,Roman Catholic,Secondary,Single,47.5,163.0,Male,17+years,Yes,Secondary
+158,Negative,05-Dec-09,23,Informal,Apostolic,Secondary,Single,41.0,148.0,Male,17+years,No,Secondary
+159,Positive,05-Dec-09,38,Unemployed,Anglican,Secondary,Married,44.5,150.0,Female,17+years,Yes,Primary
+160,Negative,05-Dec-09,37,Student,Apostolic,Secondary,Married,60.0,151.0,Male,17+years,,Secondary
+161,Positive,05-Dec-09,30,Formal,Anglican,Secondary,Married,63.5,166.0,Female,<17years,No,Primary
+162,Negative,05-Dec-09,33,Informal,Other,Secondary,Divorcee,70.5,168.0,Female,17+years,No,Primary
+163,Positive,06-Dec-09,32,Unemployed,Apostolic,Secondary,Married,53.0,156.0,Female,<17years,Yes,Secondary
+164,Negative,06-Dec-09,29,Student,Roman Catholic,Secondary,Married,48.0,163.0,Female,17+years,,Primary
+165,Positive,06-Dec-09,20,Student,Pentecostal,Secondary,Married,65.0,162.0,Female,17+years,,Primary
+166,Negative,06-Dec-09,23,Student,Pentecostal,Secondary,Married,35.0,152.0,Female,17+years,,Secondary
+167,Positive,06-Dec-09,32,Formal,Roman Catholic,Secondary,Married,50.5,158.0,Male,17+years,No,Secondary
+168,Negative,06-Dec-09,37,Formal,Atheist,Secondary,Divorcee,71.0,169.0,Male,17+years,No,Primary
+169,Positive,06-Dec-09,28,Unemployed,Apostolic,Primary,Married,44.0,158.0,Female,17+years,Yes,Secondary
+170,Negative,06-Dec-09,24,Formal,Anglican,Secondary,Married,42.0,149.0,Female,17+years,No,Primary
+171,Positive,08-Dec-09,32,Informal,Pentecostal,Secondary,Divorcee,54.0,147.0,Female,17+years,No,Secondary
+172,Negative,08-Dec-09,36,Formal,Pentecostal,Secondary,Widowed,63.0,161.0,Female,17+years,No,Secondary
+173,Positive,08-Dec-09,24,Student,Atheist,Tertiary,Single,45.5,154.0,Male,<17years,,Primary
+174,Negative,08-Dec-09,23,Formal,Atheist,Secondary,Married,54.0,168.0,Male,17+years,No,Secondary
+175,Positive,08-Dec-09,29,Unemployed,Atheist,Secondary,Married,32.8,154.0,Male,17+years,Yes,Secondary
+176,Negative,08-Dec-09,25,Formal,Methodist,Secondary,Married,47.0,164.0,Male,17+years,No,Secondary
+177,Positive,08-Dec-09,34,Unemployed,Pentecostal,Secondary,Married,62.0,175.0,Female,17+years,Yes,Secondary
+178,Negative,08-Dec-09,33,Informal,Pentecostal,Secondary,Divorcee,52.0,155.0,Female,17+years,No,Secondary
+179,Positive,08-Dec-09,18,Student,Methodist,Secondary,Co-Habiting,48.5,167.0,Female,17+years,,Primary
+180,Negative,08-Dec-09,20,Unemployed,Pentecostal,Secondary,Single,61.0,169.0,Female,17+years,Yes,Secondary
+181,Positive,08-Dec-09,26,Formal,Roman Catholic,Secondary,Married,44.9,161.0,Male,17+years,No,Primary
+182,Negative,08-Dec-09,25,Formal,Other,Secondary,Married,52.0,149.0,Male,17+years,No,Secondary
+183,Positive,08-Dec-09,26,Informal,Other,Secondary,Married,50.0,165.0,Male,17+years,No,Primary
+184,Negative,03-Dec-09,24,Student,Anglican,Tertiary,Single,45.0,167.0,Male,17+years,,Secondary
+185,Positive,06-Dec-09,46,Formal,Roman Catholic,Primary,Married,45.5,157.0,Male,,No,Secondary
+186,Negative,06-Dec-09,50,Formal,Apostolic,Secondary,Married,53.0,155.0,Male,17+years,No,Secondary
+187,Positive,03-Dec-09,32,Informal,Pentecostal,Secondary,Married,55.0,,Male,17+years,No,Secondary
+188,Negative,03-Dec-09,35,Formal,Apostolic,Secondary,Married,47.0,166.0,Male,17+years,No,Secondary
+189,Positive,03-Dec-09,27,Formal,Apostolic,Secondary,Married,42.0,158.0,Male,17+years,No,Secondary
+190,Negative,05-Dec-09,30,Informal,Anglican,Secondary,Divorcee,54.9,157.0,Male,17+years,No,Secondary
+191,Positive,06-Dec-09,22,Formal,Pentecostal,Secondary,Co-Habiting,44.5,157.0,Male,<17years,No,Primary
+192,Negative,03-Dec-09,20,Unemployed,Atheist,Secondary,Single,56.0,170.0,Male,17+years,Yes,Secondary
+193,Positive,03-Dec-09,30,Unemployed,Atheist,Secondary,Co-Habiting,64.0,174.0,Female,17+years,Yes,Secondary
+194,Negative,03-Dec-09,31,Formal,Other,Secondary,Married,54.5,158.0,Female,17+years,No,Secondary
+195,Positive,04-Dec-09,25,Unemployed,Other,Secondary,Married,48.8,160.0,Female,17+years,Yes,Primary
+196,Negative,05-Dec-09,23,Formal,Pentecostal,Secondary,Married,63.0,168.0,Female,17+years,No,Secondary
+197,Positive,06-Dec-09,28,Unemployed,Roman Catholic,Secondary,Co-Habiting,39.0,157.0,Female,<17years,Yes,Primary
+198,Negative,04-Dec-09,32,Informal,Methodist,Secondary,Widowed,50.5,167.0,Female,17+years,No,Secondary
+199,Positive,03-Dec-09,26,Unemployed,Apostolic,Secondary,Married,43.8,161.0,Female,17+years,Yes,Primary
+200,Negative,03-Dec-09,26,Unemployed,Other,Secondary,Divorcee,50.0,149.0,Female,<17years,Yes,Primary
+201,Positive,04-Dec-09,23,Unemployed,Apostolic,Secondary,Married,57.3,161.0,Female,<17years,Yes,Primary
+202,Negative,04-Dec-09,20,Student,Other,Tertiary,Married,63.0,172.0,Female,17+years,,Secondary
+203,Positive,05-Dec-09,30,Formal,Atheist,Primary,Widowed,66.0,166.0,Male,<17years,No,Primary
+204,Negative,05-Dec-09,30,Formal,Other,Secondary,Married,35.0,153.0,Male,17+years,No,Secondary
+205,Positive,03-Dec-09,23,Unemployed,Apostolic,Secondary,Divorcee,52.5,154.0,Male,17+years,Yes,Primary
+206,Negative,05-Dec-09,21,Formal,Atheist,Secondary,Single,49.0,155.0,Male,17+years,No,Secondary
+207,Positive,03-Dec-09,44,Informal,Apostolic,Secondary,Married,42.9,163.0,Male,17+years,No,Secondary
+208,Negative,08-Dec-09,41,Informal,Roman Catholic,Primary,Co-Habiting,49.0,164.0,Male,17+years,No,Primary
+209,Positive,03-Dec-09,22,Formal,Pentecostal,Tertiary,Single,45.0,157.0,Male,17+years,No,Secondary
+210,Negative,03-Dec-09,23,Formal,Anglican,Secondary,Single,63.5,170.0,Male,17+years,No,Secondary
+211,Positive,06-Dec-09,27,Formal,Methodist,Tertiary,Single,53.0,159.0,Female,17+years,No,Secondary
+212,Negative,06-Dec-09,32,Student,Methodist,Secondary,Married,50.2,154.0,Female,<17years,,Primary
+213,Positive,06-Dec-09,42,Unemployed,Apostolic,Primary,Married,38.0,155.0,,17+years,Yes,Primary
+214,Negative,03-Dec-09,46,Unemployed,Atheist,Primary,Widowed,57.0,173.0,Female,<17years,Yes,Secondary
+215,Positive,03-Dec-09,18,Unemployed,Atheist,Primary,Single,55.0,182.0,Female,17+years,Yes,Secondary
+216,Negative,03-Dec-09,23,Informal,Pentecostal,Secondary,Widowed,47.3,167.0,Female,17+years,No,Secondary
+217,Positive,04-Dec-09,22,Unemployed,Roman Catholic,Secondary,Married,40.0,152.0,Female,,Yes,Primary
+218,Negative,04-Dec-09,22,Unemployed,Pentecostal,Secondary,Single,49.0,148.0,Female,17+years,Yes,Primary
+219,Positive,05-Dec-09,30,Unemployed,Apostolic,Secondary,Married,54.0,180.0,Female,17+years,Yes,Secondary
+220,Negative,06-Dec-09,31,Unemployed,Atheist,Primary,Divorcee,43.0,163.0,Female,17+years,Yes,Primary
+221,Positive,08-Dec-09,22,Formal,Apostolic,Secondary,Married,47.0,169.0,Female,17+years,No,Secondary
+222,Negative,03-Dec-09,24,Unemployed,Other,Secondary,Married,60.0,168.0,Female,17+years,Yes,Secondary
+223,Positive,03-Dec-09,17,Unemployed,Methodist,Secondary,Single,38.0,154.0,Female,17+years,Yes,Primary
+224,Negative,05-Dec-09,21,Unemployed,Other,Secondary,Married,53.0,157.0,Female,17+years,Yes,Secondary
+225,Positive,04-Dec-09,26,Unemployed,Pentecostal,Secondary,Married,46.0,170.0,Female,17+years,Yes,Secondary
+226,Negative,05-Dec-09,27,Informal,Atheist,Secondary,Married,45.0,160.0,Female,17+years,No,Secondary
