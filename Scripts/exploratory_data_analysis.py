@@ -4,6 +4,7 @@ import pandas as pd               # data wrangling
 import xlwt                       # writing to Excel, used with '.to_excel()'
 import numpy as np                # data wrangling
 import matplotlib.pyplot as plt   # data viz
+import seaborn as sns             # data viz
 import re                         # regular expressions, 
 
 # check current working directory
@@ -219,14 +220,95 @@ pd.crosstab(index = STIdata1['Case_Status'],
             normalize = 'columns').round(4)*100
 
 # visualisation
-plt.bar(x = 'Occupation',
-        y = 'Age',
-        height = 10)
-
+# simple bar graph
+sns.barplot(x = 'Occupation',
+            y = 'Age', 
+            data = STIdata1,
+            estimator = 'mean')
 plt.show()
 
-STIdata1.plot.bar(x = 'Occupation', 
-                  y = 'Age', 
-                  rot = 0)
+# two-way bar graph
+sns.barplot(x = 'Occupation',
+            y = 'Age', 
+            hue = 'Sex',
+            data = STIdata1,
+            estimator = 'median')
+plt.show()
 
+# two-way bar graph
+ax = sns.barplot(
+    x = 'Occupation',
+    y = 'Age',
+    hue = 'Sex',
+    data = STIdata1,
+    estimator = 'mean',
+    orient = 'v',
+    capsize = 0.1,
+    dodge = True,
+    errwidth = 0.5,
+    palette = 'Set2'
+    )
+ax.legend(loc = 'upper left', ncols = 3)
+plt.title("Occupation by Average Age and Sex")
+plt.show()
 
+# count bar graph
+sns.countplot(x = STIdata1["Church"])
+plt.show()
+
+ax = sns.countplot(
+    y = "Church",
+    hue = "Case_Status",
+    data = STIdata1,
+    order = STIdata1['Church'].value_counts().index,
+    palette='Set2'
+    )
+for label in ax.containers:
+    ax.bar_label(label,
+                 fontsize = 8)
+plt.title("Church by Case Status")
+plt.show()
+
+# scatter plot
+sns.scatterplot(
+    data = STIdata1, 
+    x = "Height", 
+    y = "Weight", 
+    hue = "Sex"
+    )
+plt.title("Weight by Height and Sex")
+plt.legend(loc = 'upper left', ncols = 1)
+plt.show()
+
+sns.scatterplot(
+    data = STIdata1, 
+    x = "Height", 
+    y = "Weight", 
+    size = "Age",
+    hue = "Age",
+    style = "Sex"
+    )
+plt.title("Weight by Height, Sex, and Age")
+plt.legend(loc = 'upper left', ncols = 1)
+plt.show()
+
+# line plot
+sns.lineplot(
+    data = STIdata1, 
+    x = "Height", 
+    y = "Weight",
+    hue = "Occupation"
+    )
+plt.title("Weight by Height and Occupation")
+plt.legend(loc = 'upper left', ncols = 1)
+plt.show()
+
+sns.lineplot(
+    data = STIdata1, 
+    x = "Height", 
+    y = "Weight",
+    hue = "AgeFirstSex"
+    )
+plt.title("Weight by Height and Age at First Sex")
+plt.legend(loc = 'upper left', ncols = 1)
+plt.show()
